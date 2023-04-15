@@ -1,0 +1,1312 @@
+[
+  {
+    "name": "Ahuachapán, Ahuachapán",
+    "id_mun": 1,
+    "id_dep": 1
+  },
+  {
+    "name": "Apaneca, Ahuachapán",
+    "id_mun": 2,
+    "id_dep": 1
+  },
+  {
+    "name": "Atiquizaya, Ahuachapán",
+    "id_mun": 3,
+    "id_dep": 1
+  },
+  {
+    "name": "Concepción de Ataco, Ahuachapán",
+    "id_mun": 4,
+    "id_dep": 1
+  },
+  {
+    "name": "El Refugio, Ahuachapán",
+    "id_mun": 5,
+    "id_dep": 1
+  },
+  {
+    "name": "Guaymango, Ahuachapán",
+    "id_mun": 6,
+    "id_dep": 1
+  },
+  {
+    "name": "Jujutla, Ahuachapán",
+    "id_mun": 7,
+    "id_dep": 1
+  },
+  {
+    "name": "San Francisco Menéndez, Ahuachapán",
+    "id_mun": 8,
+    "id_dep": 1
+  },
+  {
+    "name": "San Lorenzo, Ahuachapán",
+    "id_mun": 9,
+    "id_dep": 1
+  },
+  {
+    "name": "San Pedro Puxtla, Ahuachapán",
+    "id_mun": 10,
+    "id_dep": 1
+  },
+  {
+    "name": "Tacuba, Ahuachapán",
+    "id_mun": 11,
+    "id_dep": 1
+  },
+  {
+    "name": "Turin, Ahuachapán",
+    "id_mun": 12,
+    "id_dep": 1
+  },
+  {
+    "name": "Candelaria de La Frontera, Santa Ana",
+    "id_mun": 13,
+    "id_dep": 2
+  },
+  {
+    "name": "Chalchuapa, Santa Ana",
+    "id_mun": 15,
+    "id_dep": 2
+  },
+  {
+    "name": "Coatepeque, Santa Ana",
+    "id_mun": 14,
+    "id_dep": 2
+  },
+  {
+    "name": "El Congo, Santa Ana",
+    "id_mun": 16,
+    "id_dep": 2
+  },
+  {
+    "name": "El Porvenir, Santa Ana",
+    "id_mun": 17,
+    "id_dep": 2
+  },
+  {
+    "name": "Masahuat, Santa Ana",
+    "id_mun": 18,
+    "id_dep": 2
+  },
+  {
+    "name": "Metapán, Santa Ana",
+    "id_mun": 19,
+    "id_dep": 2
+  },
+  {
+    "name": "San Antonio Pajonal, Santa Ana",
+    "id_mun": 20,
+    "id_dep": 2
+  },
+  {
+    "name": "San Sebastián Salitrillo, Santa Ana",
+    "id_mun": 21,
+    "id_dep": 2
+  },
+  {
+    "name": "Santa Ana, Santa Ana",
+    "id_mun": 22,
+    "id_dep": 2
+  },
+  {
+    "name": "Santa Rosa Guachipilin, Santa Ana",
+    "id_mun": 23,
+    "id_dep": 2
+  },
+  {
+    "name": "Santiago de La Frontera, Santa Ana",
+    "id_mun": 24,
+    "id_dep": 2
+  },
+  {
+    "name": "Texistepeque, Santa Ana",
+    "id_mun": 25,
+    "id_dep": 2
+  },
+  {
+    "name": "Acajutla, Sonsonate",
+    "id_mun": 26,
+    "id_dep": 3
+  },
+  {
+    "name": "Armenia, Sonsonate",
+    "id_mun": 27,
+    "id_dep": 3
+  },
+  {
+    "name": "Caluco, Sonsonate",
+    "id_mun": 28,
+    "id_dep": 3
+  },
+  {
+    "name": "Cuisnahuat, Sonsonate",
+    "id_mun": 29,
+    "id_dep": 3
+  },
+  {
+    "name": "Izalco, Sonsonate",
+    "id_mun": 31,
+    "id_dep": 3
+  },
+  {
+    "name": "Juayua, Sonsonate",
+    "id_mun": 32,
+    "id_dep": 3
+  },
+  {
+    "name": "Nahuizalco, Sonsonate",
+    "id_mun": 33,
+    "id_dep": 3
+  },
+  {
+    "name": "Nahulingo, Sonsonate",
+    "id_mun": 34,
+    "id_dep": 3
+  },
+  {
+    "name": "Salcoatitán, Sonsonate",
+    "id_mun": 35,
+    "id_dep": 3
+  },
+  {
+    "name": "San Antonio del Monte, Sonsonate",
+    "id_mun": 36,
+    "id_dep": 3
+  },
+  {
+    "name": "San Julián, Sonsonate",
+    "id_mun": 37,
+    "id_dep": 3
+  },
+  {
+    "name": "Santa Catarina Masahuat, Sonsonate",
+    "id_mun": 38,
+    "id_dep": 3
+  },
+  {
+    "name": "Santa Isabel Ishuatán, Sonsonate",
+    "id_mun": 30,
+    "id_dep": 3
+  },
+  {
+    "name": "Santo Domingo de Guzmán, Sonsonate",
+    "id_mun": 39,
+    "id_dep": 3
+  },
+  {
+    "name": "Sonsonate, Sonsonate",
+    "id_mun": 40,
+    "id_dep": 3
+  },
+  {
+    "name": "Sonzacate, Sonsonate",
+    "id_mun": 41,
+    "id_dep": 3
+  },
+  {
+    "name": "Agua Caliente, Chalatenango",
+    "id_mun": 42,
+    "id_dep": 4
+  },
+  {
+    "name": "Arcatao, Chalatenango",
+    "id_mun": 43,
+    "id_dep": 4
+  },
+  {
+    "name": "Azacualpa, Chalatenango",
+    "id_mun": 44,
+    "id_dep": 4
+  },
+  {
+    "name": "Cancasque, Chalatenango",
+    "id_mun": 68,
+    "id_dep": 4
+  },
+  {
+    "name": "Chalatenango, Chalatenango",
+    "id_mun": 48,
+    "id_dep": 4
+  },
+  {
+    "name": "Citalá, Chalatenango",
+    "id_mun": 45,
+    "id_dep": 4
+  },
+  {
+    "name": "Comalapa, Chalatenango",
+    "id_mun": 46,
+    "id_dep": 4
+  },
+  {
+    "name": "Concepción Quezaltepeque, Chalatenango",
+    "id_mun": 47,
+    "id_dep": 4
+  },
+  {
+    "name": "Dulce Nombre de María, Chalatenango",
+    "id_mun": 49,
+    "id_dep": 4
+  },
+  {
+    "name": "El Carrizal, Chalatenango",
+    "id_mun": 50,
+    "id_dep": 4
+  },
+  {
+    "name": "El Paraiso, Chalatenango",
+    "id_mun": 51,
+    "id_dep": 4
+  },
+  {
+    "name": "La Laguna, Chalatenango",
+    "id_mun": 52,
+    "id_dep": 4
+  },
+  {
+    "name": "La Palma, Chalatenango",
+    "id_mun": 53,
+    "id_dep": 4
+  },
+  {
+    "name": "La Reina, Chalatenango",
+    "id_mun": 54,
+    "id_dep": 4
+  },
+  {
+    "name": "Las Flores, Chalatenango",
+    "id_mun": 69,
+    "id_dep": 4
+  },
+  {
+    "name": "Las Vueltas, Chalatenango",
+    "id_mun": 55,
+    "id_dep": 4
+  },
+  {
+    "name": "Nombre de Jesús, Chalatenango",
+    "id_mun": 56,
+    "id_dep": 4
+  },
+  {
+    "name": "Nueva Concepción, Chalatenango",
+    "id_mun": 57,
+    "id_dep": 4
+  },
+  {
+    "name": "Nueva Trinidad, Chalatenango",
+    "id_mun": 58,
+    "id_dep": 4
+  },
+  {
+    "name": "Ojos de Agua, Chalatenango",
+    "id_mun": 59,
+    "id_dep": 4
+  },
+  {
+    "name": "Potonico, Chalatenango",
+    "id_mun": 60,
+    "id_dep": 4
+  },
+  {
+    "name": "San Antonio de La Cruz, Chalatenango",
+    "id_mun": 61,
+    "id_dep": 4
+  },
+  {
+    "name": "San Antonio Los Ranchos, Chalatenango",
+    "id_mun": 62,
+    "id_dep": 4
+  },
+  {
+    "name": "San Fernando, Chalatenango",
+    "id_mun": 63,
+    "id_dep": 4
+  },
+  {
+    "name": "San Francisco Lempa, Chalatenango",
+    "id_mun": 64,
+    "id_dep": 4
+  },
+  {
+    "name": "San Francisco Morazán, Chalatenango",
+    "id_mun": 65,
+    "id_dep": 4
+  },
+  {
+    "name": "San Ignacio, Chalatenango",
+    "id_mun": 66,
+    "id_dep": 4
+  },
+  {
+    "name": "San Isidro Labrador, Chalatenango",
+    "id_mun": 67,
+    "id_dep": 4
+  },
+  {
+    "name": "San Luis del Carmen, Chalatenango",
+    "id_mun": 70,
+    "id_dep": 4
+  },
+  {
+    "name": "San Miguel de Mercedes, Chalatenango",
+    "id_mun": 71,
+    "id_dep": 4
+  },
+  {
+    "name": "San Rafael, Chalatenango",
+    "id_mun": 72,
+    "id_dep": 4
+  },
+  {
+    "name": "Santa Rita, Chalatenango",
+    "id_mun": 73,
+    "id_dep": 4
+  },
+  {
+    "name": "Tejutla, Chalatenango",
+    "id_mun": 74,
+    "id_dep": 4
+  },
+  {
+    "name": "Antiguo Cuscatlán, La Libertad",
+    "id_mun": 75,
+    "id_dep": 5
+  },
+  {
+    "name": "Chiltiupán, La Libertad",
+    "id_mun": 79,
+    "id_dep": 5
+  },
+  {
+    "name": "Ciudad Arce, La Libertad",
+    "id_mun": 76,
+    "id_dep": 5
+  },
+  {
+    "name": "Colón, La Libertad",
+    "id_mun": 77,
+    "id_dep": 5
+  },
+  {
+    "name": "Comasagua, La Libertad",
+    "id_mun": 78,
+    "id_dep": 5
+  },
+  {
+    "name": "Huizúcar, La Libertad",
+    "id_mun": 80,
+    "id_dep": 5
+  },
+  {
+    "name": "Jayaque, La Libertad",
+    "id_mun": 81,
+    "id_dep": 5
+  },
+  {
+    "name": "Jicalapa, La Libertad",
+    "id_mun": 82,
+    "id_dep": 5
+  },
+  {
+    "name": "La Libertad, La Libertad",
+    "id_mun": 83,
+    "id_dep": 5
+  },
+  {
+    "name": "Nuevo Cuscatlán, La Libertad",
+    "id_mun": 84,
+    "id_dep": 5
+  },
+  {
+    "name": "Quezaltepeque, La Libertad",
+    "id_mun": 86,
+    "id_dep": 5
+  },
+  {
+    "name": "Sacacoyo, La Libertad",
+    "id_mun": 87,
+    "id_dep": 5
+  },
+  {
+    "name": "San José Villanueva, La Libertad",
+    "id_mun": 88,
+    "id_dep": 5
+  },
+  {
+    "name": "San Juan Opico, La Libertad",
+    "id_mun": 89,
+    "id_dep": 5
+  },
+  {
+    "name": "San Matías, La Libertad",
+    "id_mun": 90,
+    "id_dep": 5
+  },
+  {
+    "name": "San Pablo Tacachico, La Libertad",
+    "id_mun": 91,
+    "id_dep": 5
+  },
+  {
+    "name": "Santa Tecla, La Libertad",
+    "id_mun": 85,
+    "id_dep": 5
+  },
+  {
+    "name": "Talnique, La Libertad",
+    "id_mun": 93,
+    "id_dep": 5
+  },
+  {
+    "name": "Tamanique, La Libertad",
+    "id_mun": 92,
+    "id_dep": 5
+  },
+  {
+    "name": "Teotepeque, La Libertad",
+    "id_mun": 94,
+    "id_dep": 5
+  },
+  {
+    "name": "Tepecoyo, La Libertad",
+    "id_mun": 95,
+    "id_dep": 5
+  },
+  {
+    "name": "Zaragoza, La Libertad",
+    "id_mun": 96,
+    "id_dep": 5
+  },
+  {
+    "name": "Aguilares, San Salvador",
+    "id_mun": 97,
+    "id_dep": 6
+  },
+  {
+    "name": "Apopa, San Salvador",
+    "id_mun": 98,
+    "id_dep": 6
+  },
+  {
+    "name": "Ayutuxtepeque, San Salvador",
+    "id_mun": 99,
+    "id_dep": 6
+  },
+  {
+    "name": "Cuscatancingo, San Salvador",
+    "id_mun": 100,
+    "id_dep": 6
+  },
+  {
+    "name": "Delgado, San Salvador",
+    "id_mun": 115,
+    "id_dep": 6
+  },
+  {
+    "name": "El Paisnal, San Salvador",
+    "id_mun": 101,
+    "id_dep": 6
+  },
+  {
+    "name": "Guazapa, San Salvador",
+    "id_mun": 102,
+    "id_dep": 6
+  },
+  {
+    "name": "Ilopango, San Salvador",
+    "id_mun": 103,
+    "id_dep": 6
+  },
+  {
+    "name": "Mejicanos, San Salvador",
+    "id_mun": 104,
+    "id_dep": 6
+  },
+  {
+    "name": "Nejapa, San Salvador",
+    "id_mun": 105,
+    "id_dep": 6
+  },
+  {
+    "name": "Panchimalco, San Salvador",
+    "id_mun": 106,
+    "id_dep": 6
+  },
+  {
+    "name": "Rosario de Mora, San Salvador",
+    "id_mun": 107,
+    "id_dep": 6
+  },
+  {
+    "name": "San Marcos, San Salvador",
+    "id_mun": 108,
+    "id_dep": 6
+  },
+  {
+    "name": "San Martín, San Salvador",
+    "id_mun": 109,
+    "id_dep": 6
+  },
+  {
+    "name": "San Salvador, San Salvador",
+    "id_mun": 110,
+    "id_dep": 6
+  },
+  {
+    "name": "Santiago Texacuangos, San Salvador",
+    "id_mun": 111,
+    "id_dep": 6
+  },
+  {
+    "name": "Santo Tomás, San Salvador",
+    "id_mun": 112,
+    "id_dep": 6
+  },
+  {
+    "name": "Soyapango, San Salvador",
+    "id_mun": 113,
+    "id_dep": 6
+  },
+  {
+    "name": "Tonacatepeque, San Salvador",
+    "id_mun": 114,
+    "id_dep": 6
+  },
+  {
+    "name": "Candelaria, Cuscatlán",
+    "id_mun": 116,
+    "id_dep": 7
+  },
+  {
+    "name": "Cojutepeque, Cuscatlán",
+    "id_mun": 117,
+    "id_dep": 7
+  },
+  {
+    "name": "El Carmen, Cuscatlán",
+    "id_mun": 118,
+    "id_dep": 7
+  },
+  {
+    "name": "El Rosario, Cuscatlán",
+    "id_mun": 119,
+    "id_dep": 7
+  },
+  {
+    "name": "Monte San Juan, Cuscatlán",
+    "id_mun": 120,
+    "id_dep": 7
+  },
+  {
+    "name": "Oratorio de Concepción, Cuscatlán",
+    "id_mun": 121,
+    "id_dep": 7
+  },
+  {
+    "name": "San Bartolome Perulapía, Cuscatlán",
+    "id_mun": 122,
+    "id_dep": 7
+  },
+  {
+    "name": "San Cristóbal, Cuscatlán",
+    "id_mun": 123,
+    "id_dep": 7
+  },
+  {
+    "name": "San José Guayabal, Cuscatlán",
+    "id_mun": 124,
+    "id_dep": 7
+  },
+  {
+    "name": "San Pedro Perulapán, Cuscatlán",
+    "id_mun": 125,
+    "id_dep": 7
+  },
+  {
+    "name": "San Rafael Cedros, Cuscatlán",
+    "id_mun": 126,
+    "id_dep": 7
+  },
+  {
+    "name": "San Ramón, Cuscatlán",
+    "id_mun": 127,
+    "id_dep": 7
+  },
+  {
+    "name": "Santa Cruz Analquito, Cuscatlán",
+    "id_mun": 128,
+    "id_dep": 7
+  },
+  {
+    "name": "Santa Cruz Michapa, Cuscatlán",
+    "id_mun": 129,
+    "id_dep": 7
+  },
+  {
+    "name": "Suchitoto, Cuscatlán",
+    "id_mun": 130,
+    "id_dep": 7
+  },
+  {
+    "name": "Tenancíngo, Cuscatlán",
+    "id_mun": 131,
+    "id_dep": 7
+  },
+  {
+    "name": "Cuyultitán, La Paz",
+    "id_mun": 132,
+    "id_dep": 8
+  },
+  {
+    "name": "El Rosario, La Paz",
+    "id_mun": 133,
+    "id_dep": 8
+  },
+  {
+    "name": "Jerusalén, La Paz",
+    "id_mun": 134,
+    "id_dep": 8
+  },
+  {
+    "name": "Mercedes de La Ceiba, La Paz",
+    "id_mun": 135,
+    "id_dep": 8
+  },
+  {
+    "name": "Olocuilta, La Paz",
+    "id_mun": 136,
+    "id_dep": 8
+  },
+  {
+    "name": "Paraíso de Osorio, La Paz",
+    "id_mun": 137,
+    "id_dep": 8
+  },
+  {
+    "name": "San Antonio Masahuat, La Paz",
+    "id_mun": 138,
+    "id_dep": 8
+  },
+  {
+    "name": "San Emigdio, La Paz",
+    "id_mun": 139,
+    "id_dep": 8
+  },
+  {
+    "name": "San Francisco Chinaméca, La Paz",
+    "id_mun": 140,
+    "id_dep": 8
+  },
+  {
+    "name": "San Juan Nonualco, La Paz",
+    "id_mun": 141,
+    "id_dep": 8
+  },
+  {
+    "name": "San Juan Talpa, La Paz",
+    "id_mun": 142,
+    "id_dep": 8
+  },
+  {
+    "name": "San Juan Tepezontes, La Paz",
+    "id_mun": 143,
+    "id_dep": 8
+  },
+  {
+    "name": "San Luis de La Herradura, La Paz",
+    "id_mun": 153,
+    "id_dep": 8
+  },
+  {
+    "name": "San Luis Talpa, La Paz",
+    "id_mun": 144,
+    "id_dep": 8
+  },
+  {
+    "name": "San Miguel Tepezontes, La Paz",
+    "id_mun": 145,
+    "id_dep": 8
+  },
+  {
+    "name": "San Pedro Masahuat, La Paz",
+    "id_mun": 146,
+    "id_dep": 8
+  },
+  {
+    "name": "San Pedro Nonualco, La Paz",
+    "id_mun": 147,
+    "id_dep": 8
+  },
+  {
+    "name": "San Rafael Obrajuelo, La Paz",
+    "id_mun": 148,
+    "id_dep": 8
+  },
+  {
+    "name": "Santa María Ostuma, La Paz",
+    "id_mun": 149,
+    "id_dep": 8
+  },
+  {
+    "name": "Santiago Nonualco, La Paz",
+    "id_mun": 150,
+    "id_dep": 8
+  },
+  {
+    "name": "Tapalhuaca, La Paz",
+    "id_mun": 151,
+    "id_dep": 8
+  },
+  {
+    "name": "Zacatecolúca, La Paz",
+    "id_mun": 152,
+    "id_dep": 8
+  },
+  {
+    "name": "Cinquera, Cabañas",
+    "id_mun": 154,
+    "id_dep": 9
+  },
+  {
+    "name": "Dolores, Cabañas",
+    "id_mun": 162,
+    "id_dep": 9
+  },
+  {
+    "name": "Guacotecti, Cabañas",
+    "id_mun": 155,
+    "id_dep": 9
+  },
+  {
+    "name": "Ilobásco, Cabañas",
+    "id_mun": 156,
+    "id_dep": 9
+  },
+  {
+    "name": "Jutiapa, Cabañas",
+    "id_mun": 157,
+    "id_dep": 9
+  },
+  {
+    "name": "San Isidro, Cabañas",
+    "id_mun": 158,
+    "id_dep": 9
+  },
+  {
+    "name": "Sensuntepeque, Cabañas",
+    "id_mun": 159,
+    "id_dep": 9
+  },
+  {
+    "name": "Tejutepeque, Cabañas",
+    "id_mun": 160,
+    "id_dep": 9
+  },
+  {
+    "name": "Victoria, Cabañas",
+    "id_mun": 161,
+    "id_dep": 9
+  },
+  {
+    "name": "Apastepeque, San Vicente",
+    "id_mun": 163,
+    "id_dep": 10
+  },
+  {
+    "name": "Guadalupe, San Vicente",
+    "id_mun": 164,
+    "id_dep": 10
+  },
+  {
+    "name": "San Cayetano Istepeque, San Vicente",
+    "id_mun": 165,
+    "id_dep": 10
+  },
+  {
+    "name": "San Esteban Catarina, San Vicente",
+    "id_mun": 168,
+    "id_dep": 10
+  },
+  {
+    "name": "San Ildefonso, San Vicente",
+    "id_mun": 169,
+    "id_dep": 10
+  },
+  {
+    "name": "San Lorenzo, San Vicente",
+    "id_mun": 170,
+    "id_dep": 10
+  },
+  {
+    "name": "San Sebastián, San Vicente",
+    "id_mun": 171,
+    "id_dep": 10
+  },
+  {
+    "name": "San Vicente, San Vicente",
+    "id_mun": 172,
+    "id_dep": 10
+  },
+  {
+    "name": "Santa Clara, San Vicente",
+    "id_mun": 166,
+    "id_dep": 10
+  },
+  {
+    "name": "Santo Domingo, San Vicente",
+    "id_mun": 167,
+    "id_dep": 10
+  },
+  {
+    "name": "Tecoluca, San Vicente",
+    "id_mun": 173,
+    "id_dep": 10
+  },
+  {
+    "name": "Tepetitán, San Vicente",
+    "id_mun": 174,
+    "id_dep": 10
+  },
+  {
+    "name": "Verapaz, San Vicente",
+    "id_mun": 175,
+    "id_dep": 10
+  },
+  {
+    "name": "Alegría, Usulután",
+    "id_mun": 176,
+    "id_dep": 11
+  },
+  {
+    "name": "Berlín, Usulután",
+    "id_mun": 177,
+    "id_dep": 11
+  },
+  {
+    "name": "California, Usulután",
+    "id_mun": 178,
+    "id_dep": 11
+  },
+  {
+    "name": "Concepción Batres, Usulután",
+    "id_mun": 179,
+    "id_dep": 11
+  },
+  {
+    "name": "El Triunfo, Usulután",
+    "id_mun": 180,
+    "id_dep": 11
+  },
+  {
+    "name": "Ereguayquín, Usulután",
+    "id_mun": 181,
+    "id_dep": 11
+  },
+  {
+    "name": "Estanzuelas, Usulután",
+    "id_mun": 182,
+    "id_dep": 11
+  },
+  {
+    "name": "Jiquilisco, Usulután",
+    "id_mun": 183,
+    "id_dep": 11
+  },
+  {
+    "name": "Jucuapa, Usulután",
+    "id_mun": 184,
+    "id_dep": 11
+  },
+  {
+    "name": "Jucuarán, Usulután",
+    "id_mun": 185,
+    "id_dep": 11
+  },
+  {
+    "name": "Mercedes Umana, Usulután",
+    "id_mun": 186,
+    "id_dep": 11
+  },
+  {
+    "name": "Nueva Granada, Usulután",
+    "id_mun": 187,
+    "id_dep": 11
+  },
+  {
+    "name": "Ozatlán, Usulután",
+    "id_mun": 188,
+    "id_dep": 11
+  },
+  {
+    "name": "Puerto El Triunfo, Usulután",
+    "id_mun": 189,
+    "id_dep": 11
+  },
+  {
+    "name": "San Agustín, Usulután",
+    "id_mun": 190,
+    "id_dep": 11
+  },
+  {
+    "name": "San Buenaventura, Usulután",
+    "id_mun": 191,
+    "id_dep": 11
+  },
+  {
+    "name": "San Dionisio, Usulután",
+    "id_mun": 192,
+    "id_dep": 11
+  },
+  {
+    "name": "San Francisco Javier, Usulután",
+    "id_mun": 194,
+    "id_dep": 11
+  },
+  {
+    "name": "Santa Elena, Usulután",
+    "id_mun": 193,
+    "id_dep": 11
+  },
+  {
+    "name": "Santa María, Usulután",
+    "id_mun": 195,
+    "id_dep": 11
+  },
+  {
+    "name": "Santiago de María, Usulután",
+    "id_mun": 196,
+    "id_dep": 11
+  },
+  {
+    "name": "Tecapán, Usulután",
+    "id_mun": 197,
+    "id_dep": 11
+  },
+  {
+    "name": "Usulután, Usulután",
+    "id_mun": 198,
+    "id_dep": 11
+  },
+  {
+    "name": "Carolina, San Miguel",
+    "id_mun": 199,
+    "id_dep": 12
+  },
+  {
+    "name": "Chapeltique, San Miguel",
+    "id_mun": 202,
+    "id_dep": 12
+  },
+  {
+    "name": "Chinameca, San Miguel",
+    "id_mun": 203,
+    "id_dep": 12
+  },
+  {
+    "name": "Chirilagua, San Miguel",
+    "id_mun": 204,
+    "id_dep": 12
+  },
+  {
+    "name": "Ciudad Barrios, San Miguel",
+    "id_mun": 200,
+    "id_dep": 12
+  },
+  {
+    "name": "Comacarán, San Miguel",
+    "id_mun": 201,
+    "id_dep": 12
+  },
+  {
+    "name": "El Tránsito, San Miguel",
+    "id_mun": 205,
+    "id_dep": 12
+  },
+  {
+    "name": "Lolotique, San Miguel",
+    "id_mun": 206,
+    "id_dep": 12
+  },
+  {
+    "name": "Moncagua, San Miguel",
+    "id_mun": 207,
+    "id_dep": 12
+  },
+  {
+    "name": "Nueva Guadalupe, San Miguel",
+    "id_mun": 208,
+    "id_dep": 12
+  },
+  {
+    "name": "Nuevo Edén de San Juan, San Miguel",
+    "id_mun": 209,
+    "id_dep": 12
+  },
+  {
+    "name": "Quelepa, San Miguel",
+    "id_mun": 210,
+    "id_dep": 12
+  },
+  {
+    "name": "San Antonio, San Miguel",
+    "id_mun": 211,
+    "id_dep": 12
+  },
+  {
+    "name": "San Gerardo, San Miguel",
+    "id_mun": 212,
+    "id_dep": 12
+  },
+  {
+    "name": "San Jorge, San Miguel",
+    "id_mun": 213,
+    "id_dep": 12
+  },
+  {
+    "name": "San Luis de La Reina, San Miguel",
+    "id_mun": 214,
+    "id_dep": 12
+  },
+  {
+    "name": "San Miguel, San Miguel",
+    "id_mun": 215,
+    "id_dep": 12
+  },
+  {
+    "name": "San Rafael Oriente, San Miguel",
+    "id_mun": 216,
+    "id_dep": 12
+  },
+  {
+    "name": "Sesori, San Miguel",
+    "id_mun": 217,
+    "id_dep": 12
+  },
+  {
+    "name": "Uluazapa, San Miguel",
+    "id_mun": 218,
+    "id_dep": 12
+  },
+  {
+    "name": "Arambala, Morazán",
+    "id_mun": 219,
+    "id_dep": 13
+  },
+  {
+    "name": "Cacaopera, Morazán",
+    "id_mun": 220,
+    "id_dep": 13
+  },
+  {
+    "name": "Chilanga, Morazán",
+    "id_mun": 222,
+    "id_dep": 13
+  },
+  {
+    "name": "Corinto, Morazán",
+    "id_mun": 221,
+    "id_dep": 13
+  },
+  {
+    "name": "Delicias de Concepción, Morazán",
+    "id_mun": 223,
+    "id_dep": 13
+  },
+  {
+    "name": "El Divisadero, Morazán",
+    "id_mun": 224,
+    "id_dep": 13
+  },
+  {
+    "name": "El Rosario, Morazán",
+    "id_mun": 225,
+    "id_dep": 13
+  },
+  {
+    "name": "Gualococti, Morazán",
+    "id_mun": 226,
+    "id_dep": 13
+  },
+  {
+    "name": "Guatajiagua, Morazán",
+    "id_mun": 227,
+    "id_dep": 13
+  },
+  {
+    "name": "Joateca, Morazán",
+    "id_mun": 228,
+    "id_dep": 13
+  },
+  {
+    "name": "Jocoaitique, Morazán",
+    "id_mun": 229,
+    "id_dep": 13
+  },
+  {
+    "name": "Jocoro, Morazán",
+    "id_mun": 230,
+    "id_dep": 13
+  },
+  {
+    "name": "Lolotiquillo, Morazán",
+    "id_mun": 231,
+    "id_dep": 13
+  },
+  {
+    "name": "Meanguera, Morazán",
+    "id_mun": 232,
+    "id_dep": 13
+  },
+  {
+    "name": "Osicala, Morazán",
+    "id_mun": 233,
+    "id_dep": 13
+  },
+  {
+    "name": "Perquín, Morazán",
+    "id_mun": 234,
+    "id_dep": 13
+  },
+  {
+    "name": "San Carlos, Morazán",
+    "id_mun": 235,
+    "id_dep": 13
+  },
+  {
+    "name": "San Fernando, Morazán",
+    "id_mun": 236,
+    "id_dep": 13
+  },
+  {
+    "name": "San Francisco Gotera, Morazán",
+    "id_mun": 237,
+    "id_dep": 13
+  },
+  {
+    "name": "San Isidro, Morazán",
+    "id_mun": 238,
+    "id_dep": 13
+  },
+  {
+    "name": "San Simón, Morazán",
+    "id_mun": 239,
+    "id_dep": 13
+  },
+  {
+    "name": "Sensembra, Morazán",
+    "id_mun": 240,
+    "id_dep": 13
+  },
+  {
+    "name": "Sociedad, Morazán",
+    "id_mun": 241,
+    "id_dep": 13
+  },
+  {
+    "name": "Torola, Morazán",
+    "id_mun": 242,
+    "id_dep": 13
+  },
+  {
+    "name": "Yamabal, Morazán",
+    "id_mun": 243,
+    "id_dep": 13
+  },
+  {
+    "name": "Yoloaiquín, Morazán",
+    "id_mun": 244,
+    "id_dep": 13
+  },
+  {
+    "name": "Anamorós, La Unión",
+    "id_mun": 245,
+    "id_dep": 14
+  },
+  {
+    "name": "Bolívar, La Unión",
+    "id_mun": 246,
+    "id_dep": 14
+  },
+  {
+    "name": "Concepción de Oriente, La Unión",
+    "id_mun": 247,
+    "id_dep": 14
+  },
+  {
+    "name": "Conchagua, La Unión",
+    "id_mun": 248,
+    "id_dep": 14
+  },
+  {
+    "name": "El Carmen, La Unión",
+    "id_mun": 249,
+    "id_dep": 14
+  },
+  {
+    "name": "El Sauce, La Unión",
+    "id_mun": 250,
+    "id_dep": 14
+  },
+  {
+    "name": "Intipucá, La Unión",
+    "id_mun": 251,
+    "id_dep": 14
+  },
+  {
+    "name": "La Unión, La Unión",
+    "id_mun": 252,
+    "id_dep": 14
+  },
+  {
+    "name": "Lislique, La Unión",
+    "id_mun": 253,
+    "id_dep": 14
+  },
+  {
+    "name": "Meanguera del Golfo, La Unión",
+    "id_mun": 262,
+    "id_dep": 14
+  },
+  {
+    "name": "Nueva Esparta, La Unión",
+    "id_mun": 254,
+    "id_dep": 14
+  },
+  {
+    "name": "Pasaquina, La Unión",
+    "id_mun": 255,
+    "id_dep": 14
+  },
+  {
+    "name": "Polorós, La Unión",
+    "id_mun": 256,
+    "id_dep": 14
+  },
+  {
+    "name": "San Alejo, La Unión",
+    "id_mun": 257,
+    "id_dep": 14
+  },
+  {
+    "name": "San José, La Unión",
+    "id_mun": 258,
+    "id_dep": 14
+  },
+  {
+    "name": "Santa Rosa de Lima, La Unión",
+    "id_mun": 259,
+    "id_dep": 14
+  },
+  {
+    "name": "Yayantique, La Unión",
+    "id_mun": 260,
+    "id_dep": 14
+  },
+  {
+    "name": "Yucuaiquín, La Unión",
+    "id_mun": 261,
+    "id_dep": 14
+  }
+]
