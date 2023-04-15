@@ -1,22 +1,26 @@
 ---
+import SearchBar from '../components/SearchBar.jsx'
 import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout>
+<Layout title='Buscador de procesos publicos de la Dirección de Obras Municipales El Salvador'>
 	<main class='my-12 w-1/2 p-2'>
-		<div class='text-white'>
+		<div class='text-slate-200'>
 			<h1 class='font-bold text-5xl tracking-wide'>
-				Procesos de la <strong class='text-cyan-400'>Dirección de Obras Municipales</strong>
+				Buscador de procesos de la <strong class='text-cyan-400'
+					>Dirección de Obras Municipales</strong
+				>
 			</h1>
 		</div>
 		<div class='text-white my-6 p-3 text-justify font-light text-lg'>
 			<p class='leading-6'>
-				Búsqueda simplificada de las obras en tu municipalidad, consulta la información y guarda la
-				ubicación para acceder rápidamente la próxima vez presionando sobre su etiqueta.
+				Búsqueda simplificada de las obras en tu municipalidad ejecutadas por la DOM, consulta la
+				información y guarda la ubicación para acceder rápidamente la próxima vez presionando sobre
+				su etiqueta.
 			</p>
 			<br />
 			<p class='leading-6'>
-				Los datos son obtenidos de la API de la Dirección de Obras Municipales, si eres una persona
+				Los datos son obtenidos desde la API de la Dirección de Obras Municipales, si eres una persona
 				o empresa que desea obtener más información sobre algún proceso o quieres involucrarte en el
 				mismo, visita el sitio web oficial <a
 					href='https://sistemas.obrasmunicipales.gob.sv/procesos/publico'
@@ -24,5 +28,9 @@ import Layout from '../layouts/Layout.astro'
 				>.
 			</p>
 		</div>
+		<div></div>
+		<section>
+			<SearchBar client:visible />
+		</section>
 	</main>
 </Layout>

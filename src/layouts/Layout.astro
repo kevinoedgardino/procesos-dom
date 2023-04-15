@@ -1,18 +1,23 @@
+---
+const { title } = Astro.props
+---
+
 <html lang='es'>
 	<head>
 		<meta charset='utf-8' />
 		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
 		<meta name='viewport' content='width=device-width' />
 		<meta name='generator' content={Astro.generator} />
-		<title>Procesos de la Dirección de Obras Municipales El Salvador</title>
+		<title>{ title }</title>
 		<link rel='preconnect' href='https://fonts.googleapis.com' />
 		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
 		<link
 			href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'
 			rel='stylesheet'
 		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	</head>
-	<body class='min-h-screen bg-darkBlue font-body'>
+	<body class='min-h-screen bg-darkBlue font-body text-white'>
 		<div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative pt-20 pb-16 lg:pt-32'>
 			<div
 				class='-z-1 max-w-lg m-auto h-[27rem] sm:h-64 sm:max-w-7xl origin-center rotate-12 bg-gradient blur-gradient'
