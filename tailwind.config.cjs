@@ -14,6 +14,9 @@ module.exports = {
 		blur: {
 			gradient: '118px'
 		},
+		dropShadow: {
+			black: '2px 2px 4px #0000009e'
+		},
 		fontFamily: {
 			body: ['Roboto', 'system-ui', 'sans-serif']
 		}
