@@ -14,7 +14,7 @@ export default function ProcessCard() {
             <p className="text-left text-sm text-slate-400 font-light">San Rafael, San Salvador, San Miguel, Dulce Nombre de María, San Franciso Morazán, San Fernando</p>
             <footer className="w-full flex justify-between mt-2 text-xs font-medium">
                 <h4 className="text-slate-600"><i class="fa-solid fa-calendar me-1"></i><span>14-04-2023</span></h4>
-                <h4 className="text-slate-600"><i class="fa-sharp fa-solid fa-location-dot"></i><span className=" ms-1">Santa Ana</span></h4>
+                <h4 className="text-slate-600"><span>Más detalles<i class="ms-1 fa-solid fa-circle-chevron-right"></i></span></h4>
             </footer>
         </article>
     )
