@@ -4,7 +4,15 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				darkBlue: '#0b1120'
+				darkBlue: '#0b1120',
+				preparing: '#93c5fd',
+				receiving: '#3b82f6',
+				evaluating: '#86efac',
+				hired: '#22c55e',
+				suspended: '#eab308',
+				noeffect: '#e5e7eb',
+				desert: '#6b7280',
+				denied: '#b45309'
 			}
 		},
 		backgroundImage: {
