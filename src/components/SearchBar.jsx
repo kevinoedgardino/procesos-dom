@@ -38,6 +38,7 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 							name='municipio'
 							list='options'
 							title='Escribe el nombre de tu municipio'
+							autoComplete='off'
 						/>
 						<span className='relative right-9'>
 							<i className='fa-sharp fa-solid fa-magnifying-glass'></i>

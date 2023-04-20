@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props
+import '../syles/global.css'
 ---
 
 <html lang='es' class="scroll-smooth">
@@ -24,7 +25,7 @@ const { title } = Astro.props
 			>
 			</div>
 		</div>
-		<div class='absolute inset-0 w-full h-full text-center flex flex-col justify-between overflow-x-scroll'>
+		<div class='absolute inset-0 w-full h-full text-center flex flex-col justify-between overflow-y-auto'>
 			<slot />
 		</div>
 	</body>
