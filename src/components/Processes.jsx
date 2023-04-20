@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import SearchBar from './SearchBar'
 import FoundProcesses from './FoundProcesses'
+import getProcesses from '../services/getProcesses'
 
 export default function Processes() {
     const [municipalitySelected, setMunicipalitySelected] = useState({})
+    const [processes, setProcesses] = useState([])
 
-    const getMunicSelected = (munic) => {
+    const getMunicSelected = async (munic) => {
         setMunicipalitySelected(munic)
+        const data = await getProcesses(munic.id_dep, munic.id_mun, 1)
+        setProcesses(data)
     }
 
     const checkIfSaved = (munic, arrayData) => {
@@ -28,7 +32,7 @@ export default function Processes() {
         <div>
             <SearchBar municSelected={getMunicSelected} saveMunicipality={saveMunicipality} />
             <br />
-            <FoundProcesses />
+            <FoundProcesses processes={processes} />
         </div>
     )
 }
