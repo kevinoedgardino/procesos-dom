@@ -25,10 +25,10 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 	return (
 		<form className='flex justify-center w-full h-16 relative' onSubmit={(e) => e.preventDefault()}>
 			<div className='grid justify-center w-fit m-auto absolute'>
-				<div className='flex'>
-					<div className='w-96 flex items-center'>
+				<div className='flex justify-center'>
+					<div className='w-70 md:w-96 flex items-center'>
 						<input
-							className='w-full p-4 bg-blue-950 text-white border-2 border-gray-500 outline-none drop-shadow-black transition ease-in-out duration-500 focus:bg-gray-800'
+							className='w-full p-4 pr-10 bg-blue-950 text-white border-2 border-gray-500 outline-none drop-shadow-black transition ease-in-out duration-500 focus:bg-gray-800'
 							type='text'
 							placeholder='Escribe el nombre de tu municipio'
 							value={municipality}

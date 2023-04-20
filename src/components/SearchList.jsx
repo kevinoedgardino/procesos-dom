@@ -12,7 +12,7 @@ export default function SearchList(
         selectMunicipality
     }) {
 	return (
-		<div className='w-96 max-h-[192px] overflow-y-scroll block mt-1'>
+		<div className='w-[21rem] md:w-96 max-h-[192px] overflow-y-scroll block mt-1'>
 		{ listType === 'searchResult'
             ? inputFocus && (
 				<ul className='text-left bg-slate-800'>

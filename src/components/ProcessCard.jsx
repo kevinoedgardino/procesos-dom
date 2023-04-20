@@ -11,7 +11,7 @@ export default function ProcessCard({ status, statusId, code, name, munic, date 
     }
 
 	return (
-        <div className="block bg-[#22344961] w-96 p-2 self-center h-min rounded shadow-[0 0 0 1px #000] border-[#30363d] border-2 hover:brightness-110 active:brightness-125 cursor-pointer">
+        <div className="block bg-[#22344961] w-80 lg:w-96 p-2 self-center h-min rounded shadow-[0 0 0 1px #000] border-[#30363d] border-2 hover:brightness-110 active:brightness-125 cursor-pointer">
             <header className="mb-1">
                 <div className="w-full flex justify-between mb-1 text-xs font-medium">
                     <h3 className={statusTextColor[statusId]}>
