@@ -2,6 +2,7 @@ import { useState } from 'react'
 import SearchBar from './SearchBar'
 import FoundProcesses from './FoundProcesses'
 import getProcesses from '../services/getProcesses'
+import ProcessDetails from '../components/ProcessDetails'
 
 export default function Processes() {
     const [municipalitySelected, setMunicipalitySelected] = useState({})
@@ -33,6 +34,7 @@ export default function Processes() {
             <SearchBar municSelected={getMunicSelected} saveMunicipality={saveMunicipality} />
             <br />
             <FoundProcesses processes={processes} />
+            <ProcessDetails show />
         </div>
     )
 }
