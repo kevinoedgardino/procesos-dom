@@ -7,6 +7,7 @@ import ProcessDetails from '../components/ProcessDetails'
 export default function Processes() {
     const [municipalitySelected, setMunicipalitySelected] = useState({})
     const [processes, setProcesses] = useState([])
+    const [openInfoModal, setOpenInfoModal] = useState(false)
 
     const getMunicSelected = async (munic) => {
         setMunicipalitySelected(munic)
@@ -29,12 +30,18 @@ export default function Processes() {
         }
     }
 
+    const showModal = (show) => {
+        const { classList } = document.getElementById('cont-main')
+        setOpenInfoModal(show)
+        show ? classList.add('overflow-y-hidden') : classList.remove('overflow-y-hidden')
+    }
+
     return (
         <div>
             <SearchBar municSelected={getMunicSelected} saveMunicipality={saveMunicipality} />
             <br />
-            <FoundProcesses processes={processes} />
-            <ProcessDetails show />
+            <FoundProcesses processes={processes} openModal={showModal} />
+            {openInfoModal && <ProcessDetails show={showModal} />}
         </div>
     )
 }

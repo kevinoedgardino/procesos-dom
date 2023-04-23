@@ -1,10 +1,9 @@
 import { statusTextColor } from './statusColors'
 
-export default function ProcessDetails({ show = false }) {
+export default function ProcessDetails({ show }) {
 	return (
 		<dialog
-			open={show}
-			className='bg-black/50 text-white  absolute top-0 left-0 w-full h-full z-50 flex flex-col justify-center items-center'
+			className='bg-black/50 text-white fixed top-0 left-0 w-full h-screen z-50 flex flex-col justify-center items-center'
 		>
 			<article className='bg-darkBlue w-[99.99%] h-fit md:max-w-10/12 md:w-10/12 p-2 opacity-100 border-[#30363d] border-2 rounded-sm text-left overflow-y-scroll'>
 				<h3 className='text-slate-600 p-2'>Código: DOM-BM-SCC-10/2022</h3>
@@ -36,7 +35,7 @@ export default function ProcessDetails({ show = false }) {
 				</div>
 				<hr className='ms-2 w-40 md:w-80 border-slate-400 my-3 mb-5' />
 				<div className='w-full overflow-x-scroll'>
-					<table className='border-collapse w-[80rem] border border-slate-500 bg-slate-800 text-sm shadow-sm'>
+					<table className='border-collapse w-[80rem] lg:w-fit border border-slate-500 bg-slate-800 text-sm shadow-sm'>
 						<thead className='bg-slate-700'>
 							<tr>
 								<th className='w-1/2 border border-slate-600 font-semibold p-3 text-slate-200 text-left'>Lotes del Proceso</th>
@@ -58,7 +57,7 @@ export default function ProcessDetails({ show = false }) {
 					</table>
 				</div>
 			</article>
-			<button type='button' className='bg-darkBlue p-3 mt-3 rounded-sm font-semibold'>
+			<button type='button' onClick={() => show(false)} className='bg-darkBlue p-3 mt-3 rounded-sm font-semibold'>
 				Cerrar
 			</button>
 		</dialog>
