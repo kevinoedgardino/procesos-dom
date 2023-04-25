@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import municipalities from '../data/municipalities.json'
 import SearchList from './SearchList'
+import { LIST_TYPE } from '../utils/globalData'
 
 export default function SearchBar({ municSelected, saveMunicipality }) {
 	const [municipality, setMunicipality] = useState('')
@@ -64,7 +65,7 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 				{municipality.length > 0
 ? (
 					<SearchList
-						listType='searchResult'
+						listType={LIST_TYPE.SEARCH_RESULT}
 						inputFocus={inputFocus}
 						municipality={municipality}
 						municipalities={municipalities}
@@ -73,7 +74,7 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 				)
 : (
 					<SearchList
-						listType='savedMunicipalities'
+						listType={LIST_TYPE.SAVED_MUNICIPALITIES}
 						inputFocus={inputFocus}
 						municipality={municipality}
 						savedMunicipality={savedMunicipalities}

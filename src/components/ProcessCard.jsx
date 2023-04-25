@@ -1,4 +1,4 @@
-import { statusTextColor } from './statusColors'
+import { statusTextColor } from '../utils/statusColors'
 
 export default function ProcessCard({ process, event }) {
 	return (

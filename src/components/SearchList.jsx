@@ -1,3 +1,5 @@
+import { LIST_TYPE } from '../utils/globalData'
+
 const removeAccents = (str) => {
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
 }
@@ -13,7 +15,7 @@ export default function SearchList(
     }) {
 	return (
 		<div className='w-[21rem] md:w-96 max-h-[192px] overflow-y-scroll block mt-1'>
-		{ listType === 'searchResult'
+		{ listType === LIST_TYPE.SEARCH_RESULT
             ? inputFocus && (
 				<ul className='text-left bg-slate-800'>
 					{municipalities.map((m) => {
@@ -34,7 +36,7 @@ export default function SearchList(
 					})}
 				</ul>
 			)
-            : listType === 'savedMunicipalities'
+            : listType === LIST_TYPE.SAVED_MUNICIPALITIES
             ? inputFocus && (
 				<ul className='text-left bg-slate-800'>
                     <p className='text-center p-1 bg-slate-900 font-semibold'>Municipios Guardados</p>
