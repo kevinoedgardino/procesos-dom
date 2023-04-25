@@ -52,30 +52,34 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 							setIsSaved(true)
 						}}
 					>
-						{
-							isSaved
-							? <i className="fa-solid fa-bookmark"></i>
-							: <i className="fa-regular fa-bookmark"></i>
-						}
+						{isSaved
+? (
+							<i className='fa-solid fa-bookmark'></i>
+						)
+: (
+							<i className='fa-regular fa-bookmark'></i>
+						)}
 					</button>
 				</div>
-				{
-					municipality.length > 0
-					? <SearchList
+				{municipality.length > 0
+? (
+					<SearchList
 						listType='searchResult'
 						inputFocus={inputFocus}
 						municipality={municipality}
 						municipalities={municipalities}
 						selectMunicipality={selectMunicipality}
 					/>
-					: <SearchList
+				)
+: (
+					<SearchList
 						listType='savedMunicipalities'
 						inputFocus={inputFocus}
 						municipality={municipality}
 						savedMunicipality={savedMunicipalities}
 						selectMunicipality={selectMunicipality}
 					/>
-				}
+				)}
 			</div>
 		</form>
 	)
