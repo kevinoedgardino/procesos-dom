@@ -8,6 +8,7 @@ export default function Processes() {
     const [municipalitySelected, setMunicipalitySelected] = useState({})
     const [processes, setProcesses] = useState([])
     const [openInfoModal, setOpenInfoModal] = useState(false)
+    const [modalData, setModalData] = useState({})
 
     const getMunicSelected = async (munic) => {
         setMunicipalitySelected(munic)
@@ -30,8 +31,9 @@ export default function Processes() {
         }
     }
 
-    const showModal = (show) => {
+    const showModal = (show, data) => {
         const { classList } = document.getElementById('cont-main')
+        setModalData(data)
         setOpenInfoModal(show)
         show ? classList.add('overflow-y-hidden') : classList.remove('overflow-y-hidden')
     }
@@ -41,7 +43,7 @@ export default function Processes() {
             <SearchBar municSelected={getMunicSelected} saveMunicipality={saveMunicipality} />
             <br />
             <FoundProcesses processes={processes} openModal={showModal} />
-            {openInfoModal && <ProcessDetails show={showModal} />}
+            {openInfoModal && <ProcessDetails process={modalData} show={showModal} />}
         </div>
     )
 }
