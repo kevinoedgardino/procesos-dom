@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import SearchBar from './SearchBar'
 import FoundProcesses from './FoundProcesses'
-import getProcesses from '../services/getProcesses'
+import getProcesses from '../api/services/getProcesses'
 import ProcessDetails from '../components/ProcessDetails'
 
 export default function Processes() {
