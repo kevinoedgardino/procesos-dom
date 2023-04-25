@@ -3,17 +3,27 @@ import SearchBar from './SearchBar'
 import FoundProcesses from './FoundProcesses'
 import getProcesses from '../api/services/getProcesses'
 import ProcessDetails from '../components/ProcessDetails'
+import Loader from './Loader'
+import { QUERY } from '../utils/globalData'
 
 export default function Processes() {
     const [municipalitySelected, setMunicipalitySelected] = useState({})
     const [processes, setProcesses] = useState([])
     const [openInfoModal, setOpenInfoModal] = useState(false)
     const [modalData, setModalData] = useState({})
+    const [loading, setLoading] = useState(false)
 
     const getMunicSelected = async (munic) => {
         setMunicipalitySelected(munic)
-        const data = await getProcesses(munic.id_dep, munic.id_mun, 1)
-        setProcesses(data)
+        setLoading(true)
+        try {
+            const data = await getProcesses(munic.id_dep, munic.id_mun, 1)
+            setProcesses(data)
+            setLoading(false)
+        } catch (error) {
+            setProcesses(QUERY.ERROR)
+            setLoading(false)
+        }
     }
 
     const checkIfSaved = (munic, arrayData) => {
@@ -39,10 +49,10 @@ export default function Processes() {
     }
 
     return (
-        <div>
+        <div className={loading ? 'w-full' : ''}>
             <SearchBar municSelected={getMunicSelected} saveMunicipality={saveMunicipality} />
             <br />
-            <FoundProcesses processes={processes} openModal={showModal} />
+            {loading ? <Loader /> : <FoundProcesses processes={processes} openModal={showModal} />}
             {openInfoModal && <ProcessDetails process={modalData} show={showModal} />}
         </div>
     )
