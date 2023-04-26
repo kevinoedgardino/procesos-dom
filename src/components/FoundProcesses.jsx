@@ -3,7 +3,7 @@ import { QUERY } from '../utils/globalData'
 import ProcessCard from './ProcessCard'
 import Loader from './Loader'
 
-export default function FoundProcesses({ processes = [], openModal, moreProcesses, totalPages, loaded }) {
+export default function FoundProcesses({ processes = [], openModal, moreProcesses, total }) {
 	const [currentPage, setCurrentPage] = useState(1)
 	const [loading, setLoading] = useState(false)
 
@@ -33,10 +33,10 @@ export default function FoundProcesses({ processes = [], openModal, moreProcesse
 				</div>
 			)}
 			{
-			totalPages > 0 && currentPage < totalPages
+			total.totalPages > 0 && currentPage < total.totalPages
 				? <div className='flex justify-center'>
 					{!loading
-					? <button type='button' onClick={() => getMoreProcesses()} className='text-blue-500 text-sm'><i className="fa-solid fa-chevron-down"></i> Mostrar más</button>
+					? <button type='button' onClick={() => getMoreProcesses()} className='text-blue-500 text-sm'><i className="fa-solid fa-chevron-down"></i> Mostrar más (Total: {total.totalElements})</button>
 					: <Loader />}
 				</div>
 				: null}

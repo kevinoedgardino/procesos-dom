@@ -13,16 +13,16 @@ export default function Processes() {
     const [openInfoModal, setOpenInfoModal] = useState(false)
     const [modalData, setModalData] = useState({})
     const [loading, setLoading] = useState(false)
-    const [totalPages, setTotalPages] = useState(0)
+    const [total, setTotal] = useState({ totalElements: 0, totalPages: 0 })
 
     const getMunicSelected = async (munic) => {
         if (munic.id_mun && (municipalitySelected.id_mun !== munic.id_mun)) {
             setMunicipalitySelected(munic)
             setLoading(true)
             try {
-                const { data, totalPages } = await getProcesses(munic.id_dep, munic.id_mun, 1)
+                const { data, totalPages, totalElements } = await getProcesses(munic.id_dep, munic.id_mun, 1)
                 setProcesses(data)
-                setTotalPages(totalPages)
+                setTotal({ totalElements, totalPages })
                 setLoading(false)
             } catch (error) {
                 setProcesses(QUERY.ERROR)
@@ -71,7 +71,7 @@ export default function Processes() {
                 processes={processes}
                 openModal={showModal}
                 moreProcesses={getMoreProcesses}
-                totalPages={totalPages}
+                total={total}
             />}
             {openInfoModal && <ProcessDetails process={modalData} show={showModal} />}
         </div>
