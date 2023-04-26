@@ -14,6 +14,28 @@ body {
     background: #21386e;
 }
 
+.cont-item {
+    animation: appear .4s ease-in;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+        filter: blur(5px);
+    }
+    70% {
+        transform: translateY(-3px);
+        opacity: 0.9;
+        filter: blur(1px); 
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
 /* Loader styles */
 
 .loader {

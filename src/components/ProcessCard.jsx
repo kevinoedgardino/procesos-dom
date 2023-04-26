@@ -2,7 +2,7 @@ import { statusTextColor } from '../utils/statusColors'
 
 export default function ProcessCard({ process, event }) {
 	return (
-        <div aria-label="Más detalles" role="button" tabIndex={0} onClick={() => event(true, process)} className="block bg-[#22344961] w-80 lg:w-96 p-2 self-center h-min rounded shadow-[0 0 0 1px #000] border-[#30363d] border-2 hover:brightness-110 active:brightness-125 cursor-pointer">
+        <div aria-label="Más detalles" role="button" tabIndex={0} onClick={() => event(true, process)} className="cont-item block bg-[#22344961] w-80 lg:w-96 p-2 self-center h-min rounded shadow-[0 0 0 1px #000] border-[#30363d] border-2 hover:brightness-110 active:brightness-125 cursor-pointer">
             <header className="mb-1">
                 <div className="w-full flex justify-between mb-1 text-xs font-medium">
                     <h3 aria-label='Estado del proceso' className={statusTextColor[process.id_estado]}>

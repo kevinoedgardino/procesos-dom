@@ -15,7 +15,7 @@ export default function Processes() {
     const [loading, setLoading] = useState(false)
 
     const getMunicSelected = async (munic) => {
-        if (munic.id_mun) {
+        if (munic.id_mun && (municipalitySelected.id_mun !== munic.id_mun)) {
             setMunicipalitySelected(munic)
             setLoading(true)
             try {
