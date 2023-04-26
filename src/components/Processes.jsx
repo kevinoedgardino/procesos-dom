@@ -13,19 +13,30 @@ export default function Processes() {
     const [openInfoModal, setOpenInfoModal] = useState(false)
     const [modalData, setModalData] = useState({})
     const [loading, setLoading] = useState(false)
+    const [totalPages, setTotalPages] = useState(0)
 
     const getMunicSelected = async (munic) => {
         if (munic.id_mun && (municipalitySelected.id_mun !== munic.id_mun)) {
             setMunicipalitySelected(munic)
             setLoading(true)
             try {
-                const data = await getProcesses(munic.id_dep, munic.id_mun, 1)
+                const { data, totalPages } = await getProcesses(munic.id_dep, munic.id_mun, 1)
                 setProcesses(data)
+                setTotalPages(totalPages)
                 setLoading(false)
             } catch (error) {
                 setProcesses(QUERY.ERROR)
                 setLoading(false)
             }
+        }
+    }
+
+    const getMoreProcesses = async ({ page }) => {
+        try {
+            const { data } = await getProcesses(municipalitySelected.id_dep, municipalitySelected.id_mun, page)
+            setProcesses([...processes, ...data])
+        } catch (error) {
+
         }
     }
 
@@ -54,7 +65,14 @@ export default function Processes() {
         <div className={loading ? 'w-full' : ''}>
             <SearchBar municSelected={getMunicSelected} saveOrDeleteMunicipality={saveOrDeleteMunicipality} />
             <br />
-            {loading ? <Loader /> : <FoundProcesses processes={processes} openModal={showModal} />}
+            {loading
+            ? <Loader />
+            : <FoundProcesses
+                processes={processes}
+                openModal={showModal}
+                moreProcesses={getMoreProcesses}
+                totalPages={totalPages}
+            />}
             {openInfoModal && <ProcessDetails process={modalData} show={showModal} />}
         </div>
     )
