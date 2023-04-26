@@ -2,17 +2,19 @@ import { useState } from 'react'
 import municipalities from '../data/municipalities.json'
 import SearchList from './SearchList'
 import { LIST_TYPE } from '../utils/globalData'
+import { checkIfSaved } from '../utils/checkSavedMunicipality'
 
-export default function SearchBar({ municSelected, saveMunicipality }) {
+export default function SearchBar({ municSelected, saveOrDeleteMunicipality }) {
 	const [municipality, setMunicipality] = useState('')
 	const [inputFocus, setInputFocus] = useState(false)
 	const [isSaved, setIsSaved] = useState(false)
 
 	const savedMunicipalities = JSON.parse(localStorage.getItem('savedMunicipalities')) ?? []
 
-	const checkIfSaved = (munic) => {
-		const saved = savedMunicipalities.find(({ id_mun: idMun }) => idMun === munic.id_mun)
-		return saved === undefined
+	const inputMunicipality = (data) => {
+		setMunicipality(data)
+		setIsSaved(false)
+		municSelected({})
 	}
 
 	const selectMunicipality = ({ mun }) => {
@@ -20,7 +22,7 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 		setMunicipality(mun.name)
 		setInputFocus(false)
 		const savedCheck = checkIfSaved(mun)
-		setIsSaved(!savedCheck)
+		setIsSaved(savedCheck)
 	}
 
 	return (
@@ -33,7 +35,7 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 							type='text'
 							placeholder='Escribe el nombre de tu municipio'
 							value={municipality}
-							onInput={(e) => setMunicipality(e.target.value)}
+							onChange={(e) => inputMunicipality(e.target.value)}
 							onFocus={() => setInputFocus(true)}
 							onBlur={() => setTimeout(() => setInputFocus(false), 400)}
 							name='municipio'
@@ -49,21 +51,21 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 						title='Guardar municipio'
 						className='w-[4rem] bg-blue-950 flex justify-center items-center text-lg border-2 border-gray-500 drop-shadow-black hover:bg-gray-800 transition ease-in-out duration-600'
 						onClick={() => {
-							saveMunicipality()
-							setIsSaved(true)
+							saveOrDeleteMunicipality()
+							setIsSaved(!isSaved)
 						}}
 					>
 						{isSaved
-? (
+						? (
 							<i className='fa-solid fa-bookmark'></i>
 						)
-: (
+						: (
 							<i className='fa-regular fa-bookmark'></i>
 						)}
 					</button>
 				</div>
 				{municipality.length > 0
-? (
+				? (
 					<SearchList
 						listType={LIST_TYPE.SEARCH_RESULT}
 						inputFocus={inputFocus}
@@ -72,7 +74,7 @@ export default function SearchBar({ municSelected, saveMunicipality }) {
 						selectMunicipality={selectMunicipality}
 					/>
 				)
-: (
+				: (
 					<SearchList
 						listType={LIST_TYPE.SAVED_MUNICIPALITIES}
 						inputFocus={inputFocus}

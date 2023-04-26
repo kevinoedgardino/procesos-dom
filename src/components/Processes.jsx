@@ -5,6 +5,7 @@ import getProcesses from '../api/services/getProcesses'
 import ProcessDetails from '../components/ProcessDetails'
 import Loader from './Loader'
 import { QUERY } from '../utils/globalData'
+import { checkIfSaved } from '../utils/checkSavedMunicipality'
 
 export default function Processes() {
     const [municipalitySelected, setMunicipalitySelected] = useState({})
@@ -14,31 +15,32 @@ export default function Processes() {
     const [loading, setLoading] = useState(false)
 
     const getMunicSelected = async (munic) => {
-        setMunicipalitySelected(munic)
-        setLoading(true)
-        try {
-            const data = await getProcesses(munic.id_dep, munic.id_mun, 1)
-            setProcesses(data)
-            setLoading(false)
-        } catch (error) {
-            setProcesses(QUERY.ERROR)
-            setLoading(false)
+        if (munic.id_mun) {
+            setMunicipalitySelected(munic)
+            setLoading(true)
+            try {
+                const data = await getProcesses(munic.id_dep, munic.id_mun, 1)
+                setProcesses(data)
+                setLoading(false)
+            } catch (error) {
+                setProcesses(QUERY.ERROR)
+                setLoading(false)
+            }
         }
     }
 
-    const checkIfSaved = (munic, arrayData) => {
-		const saved = arrayData.find(({ id_mun: idMun }) => idMun === munic.id_mun)
-		return !(saved === undefined)
-	}
-
-    const saveMunicipality = () => {
+    const saveOrDeleteMunicipality = () => {
         const savedMunic = JSON.parse(window.localStorage.getItem('savedMunicipalities'))
         const isSaved = checkIfSaved(municipalitySelected, savedMunic ?? [])
 
         if (!isSaved) {
             const newSavedMunic = savedMunic ? [...savedMunic, municipalitySelected] : [municipalitySelected]
             window.localStorage.setItem('savedMunicipalities', JSON.stringify(newSavedMunic))
+            return
         }
+
+        const deleteMunic = savedMunic.filter(m => m.id_mun !== municipalitySelected.id_mun)
+        window.localStorage.setItem('savedMunicipalities', JSON.stringify(deleteMunic))
     }
 
     const showModal = (show, data) => {
@@ -50,7 +52,7 @@ export default function Processes() {
 
     return (
         <div className={loading ? 'w-full' : ''}>
-            <SearchBar municSelected={getMunicSelected} saveMunicipality={saveMunicipality} />
+            <SearchBar municSelected={getMunicSelected} saveOrDeleteMunicipality={saveOrDeleteMunicipality} />
             <br />
             {loading ? <Loader /> : <FoundProcesses processes={processes} openModal={showModal} />}
             {openInfoModal && <ProcessDetails process={modalData} show={showModal} />}
