@@ -1,8 +1,26 @@
 import Loader from './Loader'
 import PlotTable from './PlotTable'
 import { statusTextColor } from '../utils/statusColors'
+import { useEffect, useState } from 'react'
+
+import getProcessPlot from '../api/services/getProcessPlot'
 
 export default function ProcessDetails({ show, process }) {
+	const [loading, setLoading] = useState(true)
+	const [processPlot, setProcessPlot] = useState([])
+	const [plotLoaded, setPlotLoaded] = useState(false)
+
+	const getPlot = async () => {
+		if (!plotLoaded) {
+			const data = await getProcessPlot(process.id)
+			setPlotLoaded(true)
+			setProcessPlot(data)
+			setLoading(false)
+			console.log('hola')
+		}
+	}
+	getPlot()
+
 	return (
 		<dialog className='bg-black/50 text-white fixed top-0 left-0 w-full h-screen z-50 flex flex-col justify-center items-center'>
 			<article className='bg-darkBlue w-[99.99%] h-fit md:max-w-10/12 md:w-10/12 p-2 opacity-100 border-[#30363d] border-2 rounded-sm text-left overflow-y-scroll'>
@@ -34,14 +52,14 @@ export default function ProcessDetails({ show, process }) {
 						<hr className='ms-2 w-40 md:w-80 border-slate-400 my-3 mb-5' />
 					</div>
 				</div>
-				<div className='w-full overflow-x-scroll'>
-					<Loader />
+				<div className='w-full overflow-x-scroll flex justify-center'>
+					{loading ? <Loader /> : <PlotTable data={processPlot}/>}
 				</div>
-				<footer class='relative mt-3 bottom-0 left-0 w-full h-fit flex justify-center'>
-					<div class='flex flex-col gap-1 justify-center w-3/4'>
-						<hr class='w-full flex m-auto border-slate-600' />
-						<p class='text-center text-xs italic text-slate-600 mb-1'>
-							Para ver la información completa de este proceso, dirígete al sitio web oficial: <a href={'https://sistemas.obrasmunicipales.gob.sv/procesos/detalle/' + process.id} class='decoration-clone text-cyan-500' target='_blank'>sistemas.obrasmunicipales.gob.sv/procesos/detalle/{process.id}</a>.
+				<footer className='relative mt-3 bottom-0 left-0 w-full h-fit flex justify-center'>
+					<div className='flex flex-col gap-1 justify-center w-3/4'>
+						<hr className='w-full flex m-auto border-slate-600' />
+						<p className='text-center text-xs italic text-slate-600 mb-1'>
+							Para ver la información completa de este proceso, dirígete al sitio web oficial: <a href={'https://sistemas.obrasmunicipales.gob.sv/procesos/detalle/' + process.id} className='decoration-clone text-cyan-500' target='_blank'>sistemas.obrasmunicipales.gob.sv/procesos/detalle/{process.id}</a>.
 						</p>
 					</div>
 				</footer>
