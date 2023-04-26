@@ -2,6 +2,7 @@ import Loader from './Loader'
 import PlotTable from './PlotTable'
 import { statusTextColor } from '../utils/statusColors'
 import { useEffect, useState } from 'react'
+import { QUERY } from '../utils/globalData'
 
 import getProcessPlot from '../api/services/getProcessPlot'
 
@@ -12,11 +13,15 @@ export default function ProcessDetails({ show, process }) {
 
 	const getPlot = async () => {
 		if (!plotLoaded) {
-			const data = await getProcessPlot(process.id)
-			setPlotLoaded(true)
-			setProcessPlot(data)
-			setLoading(false)
-			console.log('hola')
+			try {
+				const data = await getProcessPlot(process.id)
+				setPlotLoaded(true)
+				setProcessPlot(data)
+				setLoading(false)
+			} catch (error) {
+				setProcessPlot(QUERY.ERROR)
+				setLoading(false)
+			}
 		}
 	}
 	getPlot()

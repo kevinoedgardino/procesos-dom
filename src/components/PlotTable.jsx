@@ -1,3 +1,4 @@
+import { QUERY } from '../utils/globalData'
 import { plotStatusColor } from '../utils/statusColors'
 
 export default function PlotTable({ data = [] }) {
@@ -23,7 +24,10 @@ export default function PlotTable({ data = [] }) {
 				</tr>
 			</thead>
 			<tbody>
-				{data.map(({ id, description, nameProvider, amount, period, idStatusPlot, statusPlot }) => (
+				{
+					data === QUERY.ERROR
+					? <p className='w-full p-3'>Algo salió mal :(</p>
+					: data.map(({ id, description, nameProvider, amount, period, idStatusPlot, statusPlot }) => (
 					<tr key={id}>
 						<td className='border border-slate-700 p-3 text-slate-400'>
 							{description}
