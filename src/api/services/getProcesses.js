@@ -1,6 +1,13 @@
 import { API_URL } from '../domain/domain'
 const url = new URL(API_URL)
 
+/**
+ *
+ * @param {Number} idDep
+ * @param {Number} idMun
+ * @param {Number} page
+ * @returns Array of processes found
+ */
 export default async function getProcesses(idDep, idMun, page) {
 	url.searchParams.set('id_departamento', idDep)
 	url.searchParams.set('id_municipio', idMun)
