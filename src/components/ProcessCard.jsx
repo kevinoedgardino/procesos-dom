@@ -16,7 +16,7 @@ export default function ProcessCard({ process, event }) {
             <p title={process.munic} className="w-full text-left text-sm text-slate-400 font-light line-clamp-3">{process.municipio}</p>
             <footer className="w-full flex justify-between mt-2 text-xs font-medium">
                 <h4 className="text-slate-600"><i className="fa-solid fa-calendar me-1"></i><span>{process.fecha_publicacion}</span></h4>
-                <h4 className="text-slate-600"><span>Más detalles<i className="ms-1 fa-solid fa-circle-chevron-right"></i></span></h4>
+                <h4 className="text-slate-600"><span>Toca para más detalles<i className="ms-1 fa-solid fa-circle-chevron-right"></i></span></h4>
             </footer>
         </div>
     )
