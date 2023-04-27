@@ -8,4 +8,6 @@
 - 🏷️ Presiona el marcador para guardar el municipio y tener un acceso directo cada vez que presiones el cuadro de busqueda. 
 - 👆 Toca cualquier proceso para ver más información.
 
+<img src="https://raw.githubusercontent.com/kevinoedgardino/kevinoedgardino/main/assets/repo/procesos-dom/domprc.gif" align="center"/>
+
 Los resultados se obtienen de la API del sitio web [api.obrasmunicipales.gob.sv].
