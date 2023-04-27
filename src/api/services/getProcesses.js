@@ -18,7 +18,7 @@ export default async function getProcesses(idDep, idMun, page) {
 
 	const res = await fetch(url)
 	const totalPages = res.headers.get('total_paginas')
-	const totalElements = res.headers.get('total_elements')
+	const totalElements = res.headers.get('total_elementos')
 	const data = await res.json()
 
 	return { data, totalPages, totalElements }
