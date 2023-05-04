@@ -1,3 +1,6 @@
+/**
+ * List of each status ID with its color class.
+ */
 export const statusTextColor = {
     2: 'text-receiving',
     3: 'text-evaluating',
@@ -9,7 +12,11 @@ export const statusTextColor = {
     16: 'text-hired'
 }
 
+/**
+ * List of each plot ID with its color class.
+ */
 export const plotStatusColor = {
+    2: 'text-green-200',
     3: 'text-red-500',
     4: 'text-amber-500',
     5: 'text-blue-400',
