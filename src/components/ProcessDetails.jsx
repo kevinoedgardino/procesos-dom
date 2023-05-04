@@ -1,10 +1,11 @@
 import Loader from './Loader'
 import PlotTable from './PlotTable'
 import { statusTextColor } from '../utils/statusColors'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { QUERY } from '../utils/globalData'
 
 import getProcessPlot from '../api/services/getProcessPlot'
+import formatDate from '../utils/formatDate'
 
 export default function ProcessDetails({ show, process }) {
 	const [loading, setLoading] = useState(true)
@@ -41,17 +42,23 @@ export default function ProcessDetails({ show, process }) {
 							<span className={statusTextColor[process.id_estado]}> {process.estado}</span>
 						</h3>
 						<h3 className='p-2'>
+							Fecha de publicación: <span className='text-slate-300'>{formatDate(process.fecha_publicacion)}</span>
+						</h3>
+						<h3 className='p-2'>
+							Fecha límite de presentación de ofertas: <span className='text-slate-300'>{formatDate(process.fecha_limite)}</span>
+						</h3>
+						<h3 className='p-2'>
 							Tipo de proceso: <span className='text-slate-300'>{process.tipo}</span>
 						</h3>
 						<h3 className='p-2'>
 							Enfoque: <span className='text-slate-300'>{process.enfoque}</span>
 						</h3>
 						<div className='p-2 block max-w-[40rem]'>
-							<h2>Departamento:</h2>
+							<h2>{process.id_departamento.length > 1 ? 'Departamentos' : 'Departamento'}:</h2>
 							<p className='text-slate-300'>{process.departamento}</p>
 						</div>
 						<div className='p-2 block max-w-[40rem]'>
-							<h2>Municipio:</h2>
+							<h2>{process.id_municipio.length > 1 ? 'Municipios' : 'Municipio'}:</h2>
 							<p className='text-slate-300'>{process.municipio}</p>
 						</div>
 						<hr className='ms-2 w-40 md:w-80 border-slate-400 my-3 mb-5' />
